@@ -46,7 +46,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWx8ZW58MHx8MHx8&w=1000&q=80");
+             background-image: url("https://i.pinimg.com/736x/34/80/57/348057d60a02295353f1874b16a1b261--frankfurt-am-main-color-interior.jpg");
              background-attachment: fixed;
 	     background-position: 25% 75%;
              background-size: cover
