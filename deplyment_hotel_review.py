@@ -41,22 +41,22 @@ html_temp = """<div style ="background-color:yellow;padding:13px"> <h1 style ="c
 st.markdown(html_temp, unsafe_allow_html=True)
 
 
-# def add_bg_from_url():
-#     st.markdown(
-#          f"""
-#          <style>
-#          .stApp {{
-#              background-image: url("https://images8.alphacoders.com/107/1079397.png");
-#              background-attachment: fixed;
-# 	     background-position: 25% 75%;
-#              background-size: cover
-#          }}
-#          </style>
-#          """,
-#          unsafe_allow_html=True
-#      )
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://storage.googleapis.com/gweb-uniblog-publish-prod/images/hotel.max-1000x1000.jpg");
+             background-attachment: fixed;
+	     background-position: 25% 75%;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
 
-# add_bg_from_url()
+add_bg_from_url()
 
 # col1, mid, col2 = st.columns([2,8,2])
 # with col1:
