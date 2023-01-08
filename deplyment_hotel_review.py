@@ -7,10 +7,10 @@ Original file is located at
     https://colab.research.google.com/drive/1l7Us9S5ly835NuWXn2sINhEy8m--45Gq
 """
 
-!pip install afinn
+
 
 import pandas as pd
-import numpy as np
+#import numpy as np
 import re 
 import nltk
 nltk.download('stopwords')
@@ -20,17 +20,17 @@ from nltk.stem import WordNetLemmatizer
 import nltk
 from afinn import Afinn
 import spacy
-from imblearn.over_sampling import SMOTE
-from sklearn.model_selection import train_test_split
+# from imblearn.over_sampling import SMOTE
+# from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.decomposition import PCA
-from sklearn.svm import SVC
+# from sklearn.decomposition import PCA
+# from sklearn.svm import SVC
 # from pickle import dump
 # from pickle import load
-from sklearn.linear_model import LogisticRegression
-#import streamlit as st
+#from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import TfidfTransformer
 from scipy.sparse import coo_matrix
+import streamlit as st
 #from spacy.lang.en import English
 
 #Lemmatization
