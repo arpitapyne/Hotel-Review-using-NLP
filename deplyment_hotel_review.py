@@ -166,39 +166,33 @@ def keywords(corpus):
   
   return attributes
 
-# this is the main function in which we define our webpage
-def main():
+# # front end elements of the web page
+# html_temp = """ 
+# <div style ="background-color:yellow;padding:13px"> 
+# <h1 style ="color:black;text-align:center;">Sentiment Analysis for Hotel Review</h1> 
+# </div> 
+# """
 
-  # front end elements of the web page
-  html_temp = """ 
-  <div style ="background-color:yellow;padding:13px"> 
-  <h1 style ="color:black;text-align:center;">Sentiment Analysis for Hotel Review</h1> 
-  </div> 
-  """
+# # display the front end aspect
+# st.markdown(html_temp, unsafe_allow_html=True)
 
-  # display the front end aspect
-  st.markdown(html_temp, unsafe_allow_html=True)
+# following lines create boxes in which user can enter data required to make prediction
+# Textbox for text user is entering
+st.subheader("Enter the text you'd like to analyze.")
+text = st.text_input('Enter text')  # text is stored in this variable
 
-  # following lines create boxes in which user can enter data required to make prediction
-  # Textbox for text user is entering
-  st.subheader("Enter the text you'd like to analyze.")
-  text = st.text_input('Enter text')  # text is stored in this variable
-
-  # when 'Button' is clicked, make the prediction and store it  
-  if st.button("Predict"):
-      # predict = Prediction(text)
-      cleaned = processing(text)
-      afn = Afinn()
-      score = [afn.score(item) for item in cleaned]
-      Affin_sentiment = ['Postitive' if score > 0 else 'Negative' for score in score]
-      predict = Affin_sentiment[0]
-      st.success('The Sentiment of the review is {}'.format(predict))
-      
-  #if st.button("IMP Attributes"):
-      st.subheader("Important Attributes in Reviews")
-      imp_att=keywords(text)
-      for i in imp_att:
-        st.success(i)
-
-if _name_ == '_main_':
-    main()
+# when 'Button' is clicked, make the prediction and store it  
+if st.button("Predict"):
+    # predict = Prediction(text)
+    cleaned = processing(text)
+    afn = Afinn()
+    score = [afn.score(item) for item in cleaned]
+    Affin_sentiment = ['Postitive' if score > 0 else 'Negative' for score in score]
+    predict = Affin_sentiment[0]
+    st.success('The Sentiment of the review is {}'.format(predict))
+    
+# if st.button("IMP Attributes"):
+    st.subheader("Important Attributes in Reviews")
+    imp_att=keywords(text)
+    for i in imp_att:
+        st.success(i)
