@@ -5,6 +5,8 @@ Original file is located at
     https://colab.research.google.com/drive/1eCkYU1btuPqPqetfq6nGXMgj5OFKbyDF
 """
 
+
+# Import Libraries *************************************************************
 import pandas as pd
 # import numpy as np
 import re 
@@ -58,6 +60,8 @@ def add_bg_from_url():
 
 add_bg_from_url()
    
+	
+# Data Cleaning *************************************************************
 #Lemmatization
 wordnet=WordNetLemmatizer()
 
@@ -121,6 +125,8 @@ def processing(corpus):
     
     return output
 
+
+# Important Attributes *************************************************************
 def keywords(corpus):
     output2=[]
     
@@ -192,7 +198,7 @@ def keywords(corpus):
 
 
 
-# ### Prediction
+# Prediction *************************************************************
 # following lines create boxes in which user can enter data required to make prediction
 # Textbox for text user is entering
 st.subheader("Enter the text you'd like to analyze.")
