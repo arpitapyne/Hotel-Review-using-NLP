@@ -35,7 +35,7 @@ from spacy.lang.en import English
 # Page Setup *************************************************************
 st.set_page_config(layout="wide")
 # front end elements of the web page
-html_temp = """<div style ="background-color:yellow;padding:13px"> <h1 style ="color:black;text-align:center;">Sentiment Analysis for Hotel Review</h1> </div>"""
+html_temp = """<div style ="background-color:black;padding:13px"> <h1 style ="color:white;text-align:center;">Sentiment Analysis for Hotel Review</h1> </div>"""
 
 # display the front end aspect
 st.markdown(html_temp, unsafe_allow_html=True)
