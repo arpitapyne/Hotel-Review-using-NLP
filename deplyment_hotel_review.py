@@ -46,7 +46,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://www.kindpng.com/picc/m/334-3346879_best-hotel-clipart-clip-art-hotel-cartoon-hd.png");
+             background-image: url("https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWx8ZW58MHx8MHx8&w=1000&q=80");
              background-attachment: fixed;
 	     background-position: 25% 75%;
              background-size: cover
