@@ -46,7 +46,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://storage.googleapis.com/gweb-uniblog-publish-prod/images/hotel.max-1000x1000.jpg");
+             background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST8qp3Nq1klrG-ADP9gZmRQZvog7WJZ-Qlkg&usqp=CAU");
              background-attachment: fixed;
 	     background-position: 25% 75%;
              background-size: cover
