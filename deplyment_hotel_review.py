@@ -30,7 +30,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 #from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import TfidfTransformer
 from scipy.sparse import coo_matrix
-import streamlit as st
+import streamlit as st
 #from spacy.lang.en import English
 
 #Lemmatization
